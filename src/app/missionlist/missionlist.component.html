@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngFor="let mission of missions">
+
+        <div *ngIf="showList" class="list" style="max-width: 300px;">
+            <img src="{{mission.links.mission_patch_small}}">
+            <mat-card-header style="font-size: 20px; font-weight: bold;" class="list-item">
+              <h2>{{mission.mission_name}}</h2>
+            </mat-card-header>
+            <mat-card-subtitle class="list-item">
+              <b>{{mission.launch_year}}</b>
+            </mat-card-subtitle><br/><br/>
+            <mat-card-content class="list-item">{{mission.details}}</mat-card-content>
+        </div>
+    </div>
+
+</div>
